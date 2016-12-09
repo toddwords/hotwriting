@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'gabriele';
+    src: url('gabriele-bad.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+#topMenu {
+	background-color: rgba(0,0,0,0.5);
+	position:fixed;
+	top:0px;
+	height: 3vw;
+	padding-top: 1.6vw;
+	width:101%;
+	opacity:0;
+	margin-left: -1%;
+	z-index: 1000
+}
+
+#bottomMenu {
+	background-color: rgba(0,0,0,0.5);
+	position:fixed;
+	bottom:0px;
+	height: 3vw;
+	padding-top: 1.6vw;
+	width:101%;
+	opacity:0;
+	margin-left: -1%;
+	z-index: 1000;
+	text-align: center;
+}
+.menuLink {
+	font-family: 'gabriele';
+	font-size: 1.15vw;
+	color:white;
+	text-decoration: none;
+	margin-left:5%;
+	margin-top:0.5em;
+}
+.menuLink:hover {
+	color:#F0F;
+	/*text-shadow: white 1px 1px;*/
+}
+
+.keyOrder {
+	font-family: 'gabriele';
+	font-size: 1.15vw;
+	color:white;
+	text-decoration: none;
+	margin-left:5%;
+	margin-top:0.5em;
+}

@@ -1,0 +1,55 @@
+<html>
+<head>
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+<script src="../jquery-1.11.1.min.js"></script>
+<script src="../mousetrap.min.js"></script>
+<script>if (window.module) module = window.module;</script>
+<script src="../hotwritingBook.js"></script>
+<link rel="stylesheet" type="text/css" href="../hotwriting.css">
+<script src="whoami.js"></script>
+<audio id="audio0" src='KOBChord0.wav' preload="auto" autoplay></audio>
+<audio id="audio1" src='KOBChord1.wav' preload="auto"></audio>
+<audio id="audio2" src='KOBChord2.wav' preload="auto"></audio>
+<audio id="audio3" src='KOBChord33.wav' preload="auto"></audio>
+<audio id="audio4" src='KOBChord4.wav' preload="auto"></audio>
+<audio id="audio5" src='KOBChord5.wav' preload="auto"></audio>
+<audio id="audio6" src='KOBChord6.wav' preload="auto"></audio>
+<style>
+@font-face{
+	font-family: 'Merienda';
+	src: url(MeriendaOne-Regular.ttf);
+}
+body{
+	font-family: 'Merienda';
+	background-color: #333;
+	color: #ccc;
+	overflow: hidden;
+
+}
+p {
+
+	font-size: 42px;
+
+}
+.good {
+	color: #994;
+	text-align: center;
+	font-size: 62px;
+	margin-bottom: 300px;
+}
+</style>
+</head>
+<body>
+<div id="introText">
+<h1>Who Am I?</h1>
+<h4>Use the Q-Y keys on your keyboard <br /></h4>
+</div>
+<!-- Editor Div -->
+<div id="editorDiv" style="display:none">
+<textarea id="editor_js" rows="40" style="width:35%;">
+</textarea>
+<input id="butttn" type="button" value="run">
+</div>
+<!-- Editor Div End -->
+</body>
+</html>

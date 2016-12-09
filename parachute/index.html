@@ -1,0 +1,63 @@
+<html>
+<head>
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+<script src="../jquery-1.11.1.min.js"></script>
+<script src="../mousetrap.min.js"></script>
+<script>if (window.module) module = window.module;</script>
+<script src="../hotwritingBook.js"></script>
+<link rel="stylesheet" type="text/css" href="../hotwriting.css">
+<script src="parachute.js"></script>
+<style>
+@font-face {
+	font-family: Oxygen;
+	src:url("oxygen-regular.ttf");
+}
+html { 
+
+  overflow: hidden;
+}
+#textHerePlz{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40vh;
+	width: 80%;
+	font-family: 'Oxygen', sans-serif;
+	color: goldenrod;
+	text-shadow: 2px 3px #222;
+	font-size: 0.95vw;
+}
+#introText {
+	color: goldenrod;
+	text-shadow: 2px 3px #222;
+}
+.line {
+	position: relative;
+	margin-top: -18px;
+	font-size: 2.35em;
+}
+video {
+position: fixed;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+background: url(ParachuteVideov2.jpg) no-repeat;
+background-size: cover;
+}
+</style>
+</head>
+<body>
+<video id="bgvid">
+<source src="ParachuteVideov2.mp4" type="video/mp4">
+</video>
+<div id="textHerePlz">
+<h1 id="introText">Press Space to Begin</h1>
+</div>;
+<span id="bottom"></span>
+</body>
+</html>

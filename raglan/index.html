@@ -1,0 +1,153 @@
+<html>
+<head>
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+<script src="../jquery-1.11.1.min.js"></script>
+<script src="../mousetrap.min.js"></script>
+<script>if (window.module) module = window.module;</script>
+<script src="../hotwritingBook.js"></script>
+<link rel="stylesheet" type="text/css" href="../hotwriting.css">
+<script src="raglan.js"></script>
+<style>
+@font-face{
+	font-family:'Germania';
+	src: url('GermaniaOne-Regular.ttf');
+}
+@font-face{
+	font-family:'CabinCondensed';
+	src: url('CabinCondensed-Regular.ttf');
+}
+@font-face{
+	font-family:'Merriweather';
+	src: url('Merriweather-LightItalic.ttf');
+}
+#textHerePlz {
+	position: absolute;
+	bottom: 0;
+	left:50%;
+	width: 100%;
+}
+#innerDiv {
+	position: relative;
+	left:-50%;
+}
+#firstH1 {
+	font-size: 2.6vw;
+	opacity: 0.9;
+}
+#secondH1 {
+	font-size: 2.0vw;
+	opacity:0.6;
+}
+#thirdH1 {
+	font-size: 1.4vw;
+	opacity:0.3;
+
+}
+html { 
+  background: url("gifs/raglanIntro.gif") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	overflow: hidden;
+
+}
+h1 {
+	font-family: 'Merriweather';
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px #333;
+}
+video {
+position: fixed;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+display:none;
+}
+
+</style>
+<audio id="raglanIntro" class="played" preload="auto" src="sound/raglanIntro.mp3" autoplay loop></audio>
+<audio id="raglan1" preload="auto" src="sound/lukeKelly/raglan1.mp3" ></audio>
+<audio id="raglan2" preload="auto" src="sound/lukeKelly/raglan2.mp3" ></audio>
+<audio id="raglan3" preload="auto" src="sound/raglan3.mp3" ></audio>
+<audio id="raglan4" preload="auto" src="sound/raglan4.mp3" ></audio>
+<audio id="raglan5" preload="auto" src="sound/raglan5.mp3" ></audio>
+<audio id="raglan6" preload="auto" src="sound/raglan6.mp3" ></audio>
+<audio id="raglan7" preload="auto" src="sound/lukeKelly/raglan7.mp3" ></audio>
+<audio id="raglan8" preload="auto" src="sound/raglan8.mp3" ></audio>
+<audio id="raglan9" preload="auto" src="sound/raglan9.mp3" ></audio>
+<audio id="raglan10" preload="auto" src="sound/raglan10.mp3" ></audio>
+<audio id="raglan11" preload="auto" src="sound/lukeKelly/raglan11.mp3" ></audio>
+<audio id="raglan12" preload="auto" src="sound/raglan12.mp3" ></audio>
+<audio id="raglan13" preload="auto" src="sound/raglan13.mp3" ></audio>
+<audio id="raglan14" preload="auto" src="sound/lukeKelly/raglan14.mp3" ></audio>
+<audio id="raglan15" preload="auto" src="sound/raglan15.mp3" ></audio>
+<audio id="raglan16" preload="auto" src="sound/raglan16.mp3" ></audio>
+<audio id="raglan17" preload="auto" src="sound/raglan17.mp3" ></audio>
+<audio id="raglan18" preload="auto" src="sound/lukeKelly/raglan18.mp3" ></audio>
+<audio id="raglan19" preload="auto" src="sound/raglan19.mp3" ></audio>
+<audio id="raglan20" preload="auto" src="sound/raglan20.mp3" ></audio>
+<audio id="raglan21" preload="auto" src="sound/lukeKelly/raglan21.mp3" ></audio>
+<audio id="raglan22" preload="auto" src="sound/raglan22.mp3" ></audio>
+<audio id="raglan23" preload="auto" src="sound/lukeKelly/raglan23.mp3" ></audio>
+<audio id="raglan24" preload="auto" src="sound/raglan24.mp3" ></audio>
+<audio id="raglan25" preload="auto" src="sound/raglan25.mp3" ></audio>
+<audio id="raglan26" preload="auto" src="sound/raglan26.mp3" ></audio>
+<audio id="raglan27" preload="auto" src="sound/raglan27.mp3" ></audio>
+<audio id="raglan28" preload="auto" src="sound/lukeKelly/raglan28.mp3" ></audio>
+<audio id="raglan29" preload="auto" src="sound/lukeKelly/raglan29.mp3" ></audio>
+<audio id="raglan30" preload="auto" src="sound/lukeKelly/raglan30.mp3" ></audio>
+<audio id="raglanOutro" preload="auto" src="sound/raglanOutro.mp3"></audio>
+</head>
+<body>
+<video id="onraglanroad" loop>
+<source src="videos/onraglanroad.mp4" type="video/mp4" preload="auto" >
+</video>
+<video id="Isawherfirst_1" loop>
+<source src="videos/Isawherfirst_1.mp4" type="video/mp4" preload="auto">
+</video>
+<video id="1_sexmachine" src="videos/1_sexmachine.mp4" type="video/mp4" preload="auto" loop></video>
+<video id="2_bestdamnwoman" src="videos/2_bestdamnwoman.mp4" type="video/mp4" preload="auto" loop></video>
+<video id="3_sightlesseyes" src="videos/3_sightlesseyes.mp4" type="video/mp4" preload="auto" loop></video>
+<video id="4_knockinmeout" src="videos/4_knockinmeout.mp4" type="video/mp4" preload="auto" loop></video>
+<video id="isawthedanger_1" src="videos/isawthedanger_1.mp4" type="video/mp4" preload="auto" loop></video>
+<video id="5_alreadythere" src="videos/5_alreadythere.mp4" type="video/mp4" preload="auto" loop></video>
+<video id="1_sexmachine" src="videos/1_sexmachine.mp4" type="video/mp4" preload="auto" loop></video>
+<video id="6_wallsstartshakin" src="videos/6_wallsstartshakin.mp4" type="video/mp4" preload="auto" loop></video>
+<video id="7_earthquakin" src="videos/7_earthquakin.mp4" type="video/mp4" preload="auto" loop></video>
+<video id="fllenleaf_1" src="videos/fllenleaf_1.mp4" type="video/mp4" preload="auto" loop></video>
+<video id="graftonStreet_1" src="videos/graftonStreet_1.mp4" type="video/mp4" preload="auto" loop></video>
+<video id="8_ysmallnightlong" src="videos/8_ysmallnightlong.mp4" type="video/mp4" preload="auto" loop></video>
+<video id="9_youshookme" src="videos/9_youshookme.mp4" type="video/mp4" preload="auto" loop></video>
+<video id="dawningoftheday_1" src="videos/dawningoftheday_1.mp4" type="video/mp4" preload="auto" loop></video>
+<video id="10_seductionline" src="videos/10_seductionline.mp4" type="video/mp4" preload="auto" loop></video>
+<video id="11_oneofakind" src="videos/11_oneofakind.mp4" type="video/mp4" preload="auto" loop></video>
+<video id="qoh" src="videos/qoh.mp4" type="video/mp4" preload="auto" loop></video>
+<video id="12_madeameal" src="videos/12_madeameal.mp4" type="video/mp4" preload="auto" loop></video>
+<video id="13_coolherdown" src="videos/13_coolherdown.mp4" type="video/mp4" preload="auto" loop></video>
+<video id="poems2say" src="videos/poems2say.mp4" type="video/mp4" preload="auto" loop></video>
+<video id="14_anotherswing" src="videos/14_anotherswing.mp4" type="video/mp4" preload="auto" loop></video>
+<video id="14a_andyou2" src="videos/14a_andyou2.mp4" type="video/mp4" preload="auto" loop></video>
+<video id="14b_Ohyou" src="videos/14b_Ohyou.mp4" type="video/mp4" preload="auto" loop></video>
+<video id="15_yeahyeahyou" src="videos/15_yeahyeahyou.mp4" type="video/mp4" preload="auto" loop></video>
+<video id="16_youreallygotme" src="videos/16_youreallygotme.mp4" type="video/mp4" preload="auto" loop></video>
+<video id="lovedtomuch" src="videos/lovedtomuch.mp4" type="video/mp4" preload="auto" loop></video>
+<video id="bysuchbysuch" src="videos/bysuchbysuch.mp4" type="video/mp4" preload="auto" loop></video>
+<video id="happinessthrownaway" src="videos/happinessthrownaway.mp4" type="video/mp4" preload="auto" loop></video>
+<div id="textHerePlz">
+<div id="innerDiv">
+<h1 id ="thirdH1"></h1>
+<h1 id ="secondH1"></h1>
+<h1 id ="firstH1"><span id="introText">Press Space to begin</span></h1>
+</div>
+</div>
+<span id="bottom"></span>
+</body>
+</html>

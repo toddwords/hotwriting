@@ -1,0 +1,15 @@
+*.jpg
+*.png
+*.mp3
+*.wav
+*.mp4
+console/
+*.eot
+*.svg
+*.woff
+*.woff2
+*.appcache
+*.gif
+*.ico
+*.icns
+node_modules/

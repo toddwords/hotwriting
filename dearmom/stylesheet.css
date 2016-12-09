@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'computer_pixel';
+    src: url('computer_pixel-7.woff2') format('woff2'),
+         url('computer_pixel-7.woff') format('woff'),
+         url('computer_pixel-7.ttf') format('truetype'),
+         url('computer_pixel-7.svg#computer_pixel-7regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html { 
+  background: url("terminal.png") no-repeat center center fixed; 
+  background-color: #333;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#letterDiv{
+  margin-top: 6%;
+  margin-left: 15%;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h4 {
+  font-size: 2.87em;
+  width: 85%;
+}
+
+p {
+  font-size: 2.87em;
+}
+textarea {
+  background-color: transparent;
+  color: green;
+  text-shadow: 3px 3px #000;
+  font-family: 'computer_pixel', Arial, sans-serif;
+  /*font-size: 2.87em;*/
+  font-size: 8.3vh;
+
+  border: none;
+  width: 85%;
+  height: 88%;
+   border: none;
+    overflow: hidden;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}

@@ -1,0 +1,94 @@
+<html>
+<head>
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+<script src="../jquery-1.11.1.min.js"></script>
+<script src="../mousetrap.min.js"></script>
+<script>if (window.module) module = window.module;</script>
+<script src="../hotwritingBook.js"></script>
+<link rel="stylesheet" type="text/css" href="../hotwriting.css">
+<script src="vcr.js"></script>
+<style>
+@font-face {
+  font-family: 'VT323';
+  src:url("VT323-Regular.ttf");
+}
+html { 
+  overflow: hidden;
+  background-color: black;
+}
+#textHerePlz{
+	background: url(bg.png) no-repeat; 
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  /*margin-left: 30vw;*/
+  display: block;
+  /*width: 999px;*/
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+	font-family: 'VT323', monospace;
+	text-shadow: 2px 3px #999;
+  font-size: 5.3vh;
+  position: relative;
+}
+#intro{
+  font-size: 1.2em;
+}
+#ilyik {
+  font-size: 1.8em;
+}
+#rewindDiv{
+  background: url(rewind.gif) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center top;
+  display: none;
+  width: 95%;
+  height: 70%;
+  z-index: -100;
+  position: relative;
+}
+h1 {
+  position: relative;
+  padding-left: 115px;
+  padding-right: 100px;
+  padding-top: 15vh;
+}
+body:after{
+    display:none;
+    content: url(bgTrans.png);
+}
+</style>
+<!-- load audio -->
+<audio id="ik1" src='sound/IKnow_01.mp3' preload="auto"></audio>
+<audio id="ik2" src='sound/IKnow_02.mp3' preload="auto"></audio>
+<audio id="ik3"src='sound/IKnow_03.mp3'preload="auto"></audio>
+<audio id="ik4"src='sound/IKnow_04.mp3'preload="auto"></audio>
+<audio id="ik5" src='sound/IKnow_05.mp3' preload="auto"></audio>
+<audio id="ik6" src='sound/IKnow_06.mp3' preload="auto"></audio>
+<audio id="ik7"src='sound/IKnow_07.mp3'preload="auto"></audio>
+<audio id="ik8"src='sound/IKnow_08.mp3'preload="auto"></audio>
+<audio id="ik9" src='sound/IKnow_09.mp3' preload="auto"></audio>
+<audio id="ik10" src='sound/IKnow_10.mp3' preload="auto"></audio>
+<audio id="ik11"src='sound/IKnow_11.mp3'preload="auto"></audio>
+<audio id="ikLong"src='sound/IKnowLongIntro.mp3'preload="auto"></audio>
+<audio id="ikShort"src='sound/IKnowShortIntro.mp3'preload="auto"></audio>
+<audio id="ikNo"src='sound/IKnowNoIntro.mp3'preload="auto"></audio>
+<audio class="rewind" id="ikRewind"src='sound/Rewind.mp3'preload="auto"></audio>
+<audio class="rewind" id="ikRewindLong"src='sound/RewindLong.mp3'preload="auto"></audio>
+<audio id="ikTapeStart"src='sound/TapeStart.mp3'preload="auto"></audio>
+<audio id="ikTapeStop"src='sound/TapeStop.mp3'preload="auto"></audio>
+</head>
+<body>
+
+<div id="textHerePlz">
+<div id="rewindDiv"></div>
+<h1 id="intro">Alternate between pressing Space to Play and Enter to Rewind</h1>
+</div>
+<span id="bottom"></span>
+</body>
+</html>

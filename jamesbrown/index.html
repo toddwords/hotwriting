@@ -1,0 +1,93 @@
+<html>
+<meta charset="utf-8" />
+<head>
+<!-- This is how we incorporate all the javascript we'll use in the piece, it's important that we put the libraries first and the piece itself (jamesbrown.js) last, since jamesbrown.js references all the other libraries and that will only work if they are above it -->
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+<script src="../jquery-1.11.1.min.js"></script>
+<script src="../mousetrap.min.js"></script>
+<script>if (window.module) module = window.module;</script>
+<script src="../hotwritingBook.js"></script>
+<link rel="stylesheet" type="text/css" href="../hotwriting.css">
+<script src="jamesbrown.js"></script>
+<!-- here's all the audio for the piece, preload='auto' means it will all load as fast as possible as the piece begins -->
+<audio id="jb1" preload="auto" src="sounds/JamesBrown1.wav"></audio>
+<audio id="jb2" preload="auto" src="sounds/JamesBrown2.wav"></audio>
+<audio id="jb3" preload="auto" src="sounds/JamesBrown3.wav"></audio>
+<audio id="jb4" preload="auto" src="sounds/JamesBrown4.wav"></audio>
+<audio id="jb5" preload="auto" src="sounds/JamesBrown5.wav"></audio>
+<audio id="jb6" preload="auto" src="sounds/JamesBrown6.wav"></audio>
+<audio id="jb7" preload="auto" src="sounds/JamesBrown7.wav"></audio>
+<audio id="jb8" preload="auto" src="sounds/JamesBrown8.wav"></audio>
+<audio id="jb9" preload="auto" src="sounds/JamesBrown9.wav"></audio>
+<audio id="jb10" preload="auto" src="sounds/JamesBrown10.wav"></audio>
+<audio id="jb11" preload="auto" src="sounds/JamesBrown11.wav"></audio>
+<audio id="jb12" preload="auto" src="sounds/JamesBrown12.wav"></audio>
+<audio id="jb13" preload="auto" src="sounds/JamesBrown13.wav"></audio>
+<audio id="jb14" preload="auto" src="sounds/JamesBrown14.wav"></audio>
+<audio id="jb15" preload="auto" src="sounds/JamesBrown15.wav"></audio>
+<audio id="jb16" preload="auto" src="sounds/JamesBrown16.wav"></audio>
+<audio id="jb17" preload="auto" src="sounds/JamesBrown17.wav"></audio>
+<audio id="jb18" preload="auto" src="sounds/JamesBrown18.wav"></audio>
+<audio id="jb19" preload="auto" src="sounds/JamesBrown19.wav"></audio>
+<audio id="jb20" preload="auto" src="sounds/JamesBrown20.wav"></audio>
+<audio id="jb21" preload="auto" src="sounds/JamesBrown21.wav"></audio>
+<audio id="jb22" preload="auto" src="sounds/JamesBrown22.wav"></audio>
+<audio id="jb23" preload="auto" src="sounds/JamesBrown23.wav"></audio>
+<audio id="jb24" preload="auto" src="sounds/JamesBrown24.wav"></audio>
+<audio id="jb25" preload="auto" src="sounds/JamesBrown25.wav"></audio>
+<audio id="jb26" preload="auto" src="sounds/JamesBrown26.wav"></audio>
+<audio id="jb27" preload="auto" src="sounds/JamesBrown27.wav"></audio>
+<audio id="jb28" preload="auto" src="sounds/JamesBrown28.wav"></audio>
+<audio id="jb29" preload="auto" src="sounds/JamesBrown29.wav"></audio>
+<audio id="jb30" preload="auto" src="sounds/JamesBrown30.wav"></audio>
+<audio id="jb31" preload="auto" src="sounds/JamesBrown31.wav"></audio>
+<audio id="jb32" preload="auto" src="sounds/JamesBrown32.wav"></audio>
+<audio id="jb33" preload="auto" src="sounds/JamesBrown33.wav"></audio>
+<audio id="jb34" preload="auto" src="sounds/JamesBrown34.wav"></audio>
+<audio id="jbfeelGood" preload="auto" src="sounds/IfeelGood.mp3"></audio>
+<!-- This is the CSS styles for the piece, this can be done right in the html or in a separate .css document -->
+<style>
+/*defines the font we'll be using from a .ttf (TrueType Font) file. i'm a big fan of this funky Fugaz One font*/
+@font-face {
+	font-family: 'Fugaz One';
+	src: url('FugazOne-Regular.ttf');
+}
+/*This sets the background image to be fullscreen and centered across all browsers*/
+html { 
+  background: url(jamesbrownBG.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*Sets the text to show up in our Fugaz One font and adds some top margins*/
+h1 {
+	font-family: 'Fugaz One', cursive;
+	margin-top: 10.5%;
+
+}
+/*Shifts text from left to right to fit around the corresponding background images*/
+.text-left {
+	margin-left: 10%;
+	width: 49%;
+	font-size: 7vh;
+}
+.text-right {
+	margin-left: 60%;
+	width: 40%;
+	font-size: 6.5vh;
+}
+/*This is basically the same as the preload='auto' in the sound files but for images. It loads the images in the background but makes them invisible, but then when we switch to them there won't be any load time*/
+body:after{
+    display:none;
+    content: url(toddBG.png) url(toddCloseup.png);
+}
+</style>
+</head>
+<body>
+<!-- Here's where our text will show up -->
+<div id="writingDiv">
+<h1 id="someText" class="text-right">Press Space to Begin</h1>
+</div>
+</body>
+</html>

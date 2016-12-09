@@ -1,0 +1,126 @@
+<html>
+<head>
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+<script src="../jquery-1.11.1.min.js"></script>
+<script src="../mousetrap.min.js"></script>
+<script>if (window.module) module = window.module;</script>
+<script src="main.js"></script>
+<script src="../hotwritingBook.js"></script>
+<link rel="stylesheet" type="text/css" href="../hotwriting.css">
+<meta http-equiv="Content-Type" content="text/html;
+charset=UTF-8">
+<style>
+@font-face {
+	font-family: PassionOne;
+	src:url("PassionOne-Regular.ttf");
+}
+html { 
+  background: url(scientist.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+  
+}
+#tintDiv {
+
+  
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: rgb(255,10, 10);
+  opacity: 0.0;
+}
+#textDiv{
+	width: 60%;
+	margin-left: 7%;
+	margin-top: 4%;
+	color: purple;
+  	font-family: "PassionOne";
+  	font-size:2.8vh; 
+}
+legend{
+	margin-top: 30%;
+	font-size: 3em;
+}
+video {
+position: fixed;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+background: url(scientist.png) no-repeat;
+background-size: cover;
+}
+
+</style>
+<!-- sample audio tag -->
+<audio class="gm" src='sounds/gm1.mp3' preload="auto"></audio>
+<audio class="gm" src='sounds/gm2.mp3' preload="auto"></audio>
+<audio class="gm" src='sounds/gm3.mp3' preload="auto"></audio>
+<audio class="gm" src='sounds/gm4.mp3' preload="auto"></audio>
+<audio class="gm" src='sounds/gm5.mp3' preload="auto"></audio>
+<audio class="tone" src='sounds/tone1.wav' preload="auto"></audio>
+<audio class="tone" src='sounds/tone2.wav' preload="auto"></audio>
+<audio class="tone" src='sounds/tone3.wav' preload="auto"></audio>
+<audio class="tone" src='sounds/tone4.wav' preload="auto"></audio>
+<audio class="tone" src='sounds/tone5.wav' preload="auto"></audio>
+<audio class="tone" src='sounds/tone6.wav' preload="auto"></audio>
+<audio class="tone" src='sounds/tone7.wav' preload="auto"></audio>
+<audio class="tone" src='sounds/tone8.wav' preload="auto"></audio>
+<audio class="tone" src='sounds/tone9.wav' preload="auto"></audio>
+<audio class="tone" src='sounds/tone10.wav' preload="auto"></audio>
+<audio class="tone" src='sounds/tone11.wav' preload="auto"></audio>
+<audio class="gun" src='sounds/gun1.mp3' preload="auto"></audio>
+<audio class="gun" src='sounds/gun2.mp3' preload="auto"></audio>
+<audio class="gun" src='sounds/gun3.mp3' preload="auto"></audio>
+<audio class="lab" src='sounds/ladder1.mp3' preload="auto"></audio>
+<audio class="lab" src='sounds/bubble2.mp3' preload="auto"></audio>
+<audio class="lab monkey" src='sounds/monkey2.mp3' preload="auto"></audio>
+<audio class="lab" src='sounds/ladder2.mp3' preload="auto"></audio>
+<audio class="lab" src='sounds/bubble1.mp3' preload="auto"></audio>
+<audio class="lab monkey" src='sounds/monkeyFull.mp3' preload="auto"></audio>
+<audio class="lab" src='sounds/ladder4.mp3' preload="auto"></audio>
+<audio class="lab" src='sounds/bubble5.mp3' preload="auto"></audio>
+<audio class="lab monkey" src='sounds/monkey1.mp3' preload="auto"></audio>
+<audio class="lab" src='sounds/bubble3.mp3' preload="auto"></audio>
+<audio class="lab monkey" src='sounds/monkey3.mp3' preload="auto"></audio>
+<audio class="lab" src='sounds/ladder3.mp3' preload="auto"></audio>
+<audio id ="rain" src='sounds/rainFull.mp3' preload="auto"></audio>
+<audio class="rain" src='sounds/step1.mp3' preload="auto"></audio>
+<audio class="rain" src='sounds/step2.mp3' preload="auto"></audio>
+<audio class="rain" src='sounds/step3.mp3' preload="auto"></audio>
+<audio class="rain" src='sounds/step4.mp3' preload="auto"></audio>
+<audio class="rain" src='sounds/step7.mp3' preload="auto"></audio>
+<audio class="ha" src='sounds/ha1.mp3' preload="auto"></audio>
+<audio class="ha" src='sounds/ha2.mp3' preload="auto"></audio>
+<audio class="ha" src='sounds/ha3.mp3' preload="auto"></audio>
+<audio class="ha" src='sounds/ha4.mp3' preload="auto"></audio>
+<audio class="ha" src='sounds/ha5.mp3' preload="auto"></audio>
+<audio class="ha" src='sounds/ha6.mp3' preload="auto"></audio>
+<audio class="ha" src='sounds/ha7.mp3' preload="auto"></audio>
+<audio class="quadcopter" src='sounds/quadcopter.mp3' preload="auto"></audio>
+<audio class="quadcopter" src='sounds/quadcopter.mp3' preload="auto"></audio>
+<audio class="quadcopter" src='sounds/quadcopter.mp3' preload="auto"></audio>
+<audio id="wyb" src='sounds/wyb.mp3' preload="auto"></audio>
+<audio id="main" src='sounds/voice.mp3' preload="auto"></audio>
+</head>
+<body>
+<video id="bgvid">
+<source src="scientistFinal.mp4" type="video/mp4">
+</video>
+<div id="tintDiv"></div>
+<div id="textDiv">
+<legend>Press keys to make sounds throughout this piece<br><br>Press any key to begin</legend>
+</div>
+</body>
+</html>

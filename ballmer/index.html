@@ -1,0 +1,64 @@
+
+<html manifest="ballmer.appcache">
+<head>
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+<script src="../jquery-1.11.1.min.js"></script>
+<script src="../mousetrap.min.js"></script>
+<script>if (window.module) module = window.module;</script>
+<script src="../hotwritingBook.js"></script>
+<link rel="stylesheet" type="text/css" href="../hotwriting.css">
+<script src="ballmer.js"></script>
+<audio id="dev1" src='sound/D1.wav' preload="auto"></audio>
+<audio id="dev2" src='sound/D2.wav' preload="auto"></audio>
+<audio id="dev3"src='sound/D3.wav'preload="auto"></audio>
+<audio id="dev4"src='sound/D4.wav'preload="auto"></audio>
+<audio id="dev5" src='sound/D5.wav' preload="auto"></audio>
+<audio id="dev6" src='sound/D6.wav' preload="auto"></audio>
+<audio id="dev7"src='sound/D7.wav'preload="auto"></audio>
+<audio id="dev8"src='sound/D8.wav'preload="auto"></audio>
+<audio id="dev9" src='sound/D9.wav' preload="auto"></audio>
+<audio id="dev10" src='sound/D10.wav' preload="auto"></audio>
+<audio id="dev11"src='sound/D11.wav'preload="auto"></audio>
+<audio id="dev12"src='sound/D12.wav'preload="auto"></audio>
+<audio id="getUp"src='sound/Getup.wav'preload="auto"></audio>
+<audio id="giveItUp"src='sound/Giveitup.wav'preload="auto"></audio>
+<audio id="yes"src='sound/yes.wav'preload="auto"></audio>
+<audio id="sitdown"src='sound/Sitdown.wav'preload="auto"></audio>
+<audio id="cmon"src='sound/Cmon.wav'preload="auto"></audio>
+<audio id="savant1"src='sound/Savant.wav'preload="auto"></audio>
+<audio id="savant2"src='sound/Savant2.wav'preload="auto"></audio>
+<style>
+html { 
+  background: url(images/Background.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+video {
+position: fixed;
+right: 0;
+bottom: 0;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+background-size: cover;
+display: none;
+}
+body:after{
+    display:none;
+    content: url(images/BC.jpg) url(images/Ballmer7.jpg) url(images/Ballmer8.jpg) url(images/Ballmer1.jpg) url(images/Ballmer2.jpg) url(images/Ballmer3.jpg) url(images/Ballmer4.jpg) url(images/Ballmer5.jpg) url(images/Ballmer6.jpg);
+}
+</style>
+</head>
+<body>
+<video id="bgvid1">
+<source src="video/Ballmer1.webm" type="video/webm">
+<source src="video/Ballmer1.mp4" type="video/mp4"></video>
+<video id="bgvid2">
+<!-- <source src="video/Ballmer2.webm" type="video/webm"> -->
+<source src="video/Ballmer2Dunk.mp4" type="video/mp4"></video>
+</body>
+</html>

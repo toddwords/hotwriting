@@ -1,0 +1,8 @@
+{
+  "productName": "Hotwriting",
+  "version": "1.4.2",
+  "main": "main.js",
+  "devDependencies": {
+    "electron": "^1.4.2"
+  }
+}

@@ -1,0 +1,22 @@
+ @font-face {
+    font-family: 'computer_pixel';
+    src: url('computer_pixel-7.woff2') format('woff2'),
+         url('computer_pixel-7.woff') format('woff'),
+         url('computer_pixel-7.ttf') format('truetype'),
+         url('computer_pixel-7.svg#computer_pixel-7regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html { 
+  background: url("terminal.png") no-repeat center center fixed; 
+  background-color: #333;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+p {
+	font-family: 'computer_pixel', Arial, sans-serif;
+}

@@ -1,0 +1,78 @@
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+<script src="jquery-1.11.1.min.js"></script>
+<script src="mousetrap.min.js"></script>
+<script>if (window.module) module = window.module;</script>
+<link rel="stylesheet" type="text/css" href="hotwriting.css">
+<style type="text/css">
+html {
+	background-image: url(swirl_pattern.png);
+	font-family: 'gabriele';
+	text-align: center;
+}
+h1 {
+	font-size: 5em;
+}
+h2 {
+	font-size: 4em;
+}
+h3 {
+	font-size: 2.6vh;
+}
+#textZONE{
+	/*background-color: rgba(255,255,255,0.55);*/
+	margin-left:29%;
+	margin-right:29%;
+	padding: 5px;
+}
+h4 {
+	text-align:left;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	font-size:1.6vh;
+}
+a {
+	text-decoration: none;
+	font-size:0.8em;
+}
+a:hover {
+	color:#D3D;
+}
+</style>
+<script src="hotwritingBook.js"></script>
+<script>
+Mousetrap.bind("ctrl+q", function(){
+	window.close()
+})
+Mousetrap.bind("esc", function(){
+	location.href = "toc/index.html"
+})
+Mousetrap.bind("ctrl+t",function(){
+	location.href = "./index.html"
+})
+Mousetrap.bind("ctrl+r",function(){
+	location.href = "./index.html"
+})
+Mousetrap.bind("f2",function(){
+	location.href = "console/index.html"
+})
+Mousetrap.bind("right", function(){
+	location.href ="toc/index.html"
+})
+Mousetrap.bind("left",function(){
+})
+</script>
+<img style="display:block;margin:auto;margin-top:2%;margin-bottom:2%;height:50%" src="eBearCover.gif" />
+<div id="textZONE">
+<h3 style="margin-top: 2px">Controls:</h3>
+<h4 style="margin-top:-15px;margin-bottom: 17px;text-align: center"><em>{Name of key} = Thing that happens when you press that key</em></h4>
+<h4>{Space} = Play through poem linearly</h4>
+<h4>{qwerty...xcvb...1234...} = Play lines individually in any order</h4>
+<h4>{Escape} = Go to Table of Contents</h4>
+<h4>{Right Arrow} = Go to next piece</h4>
+<h4>{Left Arrow} = Go to previous piece</h4>
+<h4>{Down Arrow} = Show/hide controls for individual piece</h4>
+<h4>{Ctrl + R} = Restart Piece</h4>
+<h4 style="">{Ctrl + Q} = Quit</h4>
+<h4 style="text-align: center;margin-bottom: 0px"><em>These options can also be accessed in the menu by moving your mouse to the top of the screen</em></h4>
+<h3><a href="toc/index.html">Press {Escape} to go to the Table of Contents</a></h3>
+</div>
